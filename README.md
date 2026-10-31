@@ -7,4 +7,4 @@
 [![Tips welcome](https://img.shields.io/badge/tips-welcome-d4a017)](https://github.com/561-group/.github/blob/main/TIPS.md)
 <!-- 561-group-standards:badges:end -->
 
-Writes and reads dated state records at <root>/<YYYY>/<MM>/<DD>/<YYYY-MM-DD>-<service>-<type>.<extension>, keyed by a caller-supplied recordedAt timestamp instead of a content hash. Use when a service needs to publish or retrieve one of its own dated snapshots under the house data/state date-tree.
+Writes and reads dated state records at <root>/<YYYY>/<MM>/<DD>/<YYYY-MM-DD>-<service>-<type>.<extension>, keyed by a caller-supplied recordedAt timestamp instead of a content hash. Use when a service needs to publish or retrieve one of its own dated snapshots under the Group data/state date-tree.
