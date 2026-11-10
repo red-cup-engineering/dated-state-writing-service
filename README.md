@@ -8,3 +8,7 @@
 <!-- 561-group-standards:badges:end -->
 
 Writes and reads dated state records at <root>/<YYYY>/<MM>/<DD>/<YYYY-MM-DD>-<service>-<type>.<extension>, keyed by a caller-supplied recordedAt timestamp instead of a content hash. Use when a service needs to publish or retrieve one of its own dated snapshots under the Group data/state date-tree.
+
+## Acceptance
+
+Run `npm test` for the source suite. See the [API reference](docs/API.md) and [runnable consumer example](examples/quickstart.test.mjs).

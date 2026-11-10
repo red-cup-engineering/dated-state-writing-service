@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "basis": "Store and read dated state records addressed by the caller's recordedAt timestamp.",
+  "cases": [
+    {
+      "id": "DATED-STATE-REFUSAL",
+      "role": "source",
+      "kind": "refusal",
+      "claim": "Writing a state record without recordedAt is refused.",
+      "file": "test/dated-state-writing.test.mjs",
+      "test": "put refuses a missing recordedAt"
+    },
+    {
+      "id": "DATED-STATE-QUICKSTART",
+      "role": "consumer",
+      "kind": "example",
+      "claim": "An installed caller reads back a record with the same content it wrote.",
+      "file": "examples/quickstart.test.mjs"
+    }
+  ]
+}
