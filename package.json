@@ -23,7 +23,6 @@
     "README*",
     "LICENSE*",
     "src",
-    "docs/API.md",
     "examples/quickstart.test.mjs"
   ],
   "license": "MIT",
