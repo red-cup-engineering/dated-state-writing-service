@@ -69,7 +69,7 @@ function recordPathFor({ root, service, type, extension, recordedAt }) {
   return { relative, absolute: join(root, relative), dir: join(root, y, m, d) };
 }
 
-export function createDatedStateStorage({ root } = {}) {
+export function createDatedStateCustody({ root } = {}) {
   if (typeof root !== "string" || !root) throw new TypeError("root is required");
 
   async function put({ service, type, extension, recordedAt, bytes, append = false }) {
