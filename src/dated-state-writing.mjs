@@ -1,4 +1,5 @@
-import { createHash, randomBytes } from "node:crypto";
+import { sha256Hex } from "@red-cup-engineering/semiotic-content-address-system";
+import { randomBytes } from "node:crypto";
 import { appendFile, mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 
@@ -95,7 +96,7 @@ export function createDatedStateCustody({ root } = {}) {
       type: RECORD_WRITTEN_TYPE,
       path: relative,
       bytes: written.byteLength,
-      sha256: createHash("sha256").update(written).digest("hex"),
+      sha256: sha256Hex(written),
     });
   }
 
